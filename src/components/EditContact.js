@@ -79,7 +79,7 @@ class EditContact extends Component {
     console.log(newContact);
     axios
       .post(
-        "http://localhost:4000/contact/update/" + this.props.match.params.id,
+        "https://intense-sea-30415.herokuapp.com/contact/update/" + this.props.match.params.id,
         newContact
       )
       .then((res) => console.log(res.data));

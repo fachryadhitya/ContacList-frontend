@@ -66,7 +66,7 @@ class CreateContact extends Component {
       contact_priority: this.state.contact_priority
     }
 
-    axios.post('http://localhost:4000/contact/add', newContact)
+    axios.post('https://intense-sea-30415.herokuapp.com/contact/add', newContact)
     .then(res => console.log(res.data))
     
     

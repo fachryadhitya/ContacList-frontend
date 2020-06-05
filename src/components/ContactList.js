@@ -24,7 +24,7 @@ class Contactlist extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:4000/contact/")
+      .get("https://intense-sea-30415.herokuapp.com/contact/")
       .then((response) => {
         this.setState({
           contact: response.data,
